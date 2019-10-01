@@ -7,5 +7,6 @@ PYSPARK_PYTHON=./environment/bin/python \
 pyspark \
 --conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=./environment/bin/python \
 --conf spark.yarn.dist.archives=environment.tar.gz#environment \
+--conf spark.yarn.dist.files=localfile.py \
 --master yarn \
 --deploy-mode client 
